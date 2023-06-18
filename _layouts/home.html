@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+
+    {{ content }}
+
+    <div>
+        <ul  class="post-list">
+            {% for category in site.categories %}
+            <li>
+                <h2><a href="{{ category.url }}">{{ category.name }}</a></h2>
+                <p>{{ category.content | markdownify }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+</div>

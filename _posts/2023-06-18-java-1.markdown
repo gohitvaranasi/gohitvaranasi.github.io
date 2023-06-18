@@ -1,0 +1,7 @@
+---
+title:  "First Java topic"
+date:   2023-06-18 19:35:10 +0530
+category: Java
+---
+
+This is the first Java topic.
